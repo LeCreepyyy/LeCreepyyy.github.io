@@ -1,0 +1,50 @@
+/*** Title : ***/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: font-0, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+    color: black;
+    background-color: lightcoral;
+    border-radius: 1.5rem;
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 7px 9px red;
+}
+
+body {
+	background: lightblue;
+}
+
+/*** Body ***/
+
+#logo {
+	margin-left: 350px;
+	margin-top: 150px;
+}
+
+#text {
+    font-size: 25px;
+    margin-top: -300px;
+    margin-left: 800px;
+    text-align: center;
+    background-color: lightcoral;
+    border-radius: 15px;
+    box-shadow: 7px 9px red;
+    width: 500px;
+    height: 370px;
+}
+
+#sign {
+	text-align: start;
+	margin-left: 35px;
+	margin-top: 185px;
+}

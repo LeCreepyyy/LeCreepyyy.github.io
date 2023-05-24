@@ -1,0 +1,54 @@
+/*** Title : ***/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: font-0, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+    color: black;
+    background-color: lightcoral;
+    border-radius: 1.5rem;
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 7px 9px red;
+}
+
+body {
+	background: lightblue;
+}
+
+/*** Body : ***/
+
+#graph_img {
+	margin-top: 125px;
+	margin-left: 250px;
+    border-radius: 25px;
+}
+
+#text_graph {
+	font-size: large;
+	margin-top: -600px;
+	margin-left: 1090px;
+	margin-right: 25px;
+	background-color: lightcoral;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 7px 9px red;
+}
+
+#question {
+	text-transform: uppercase;
+}
+
+#sign {
+	text-align: start;
+	margin-left: 35px;
+    margin-top: 450px;
+}

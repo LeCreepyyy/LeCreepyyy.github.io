@@ -1,0 +1,108 @@
+/*** Title : ***/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: font-0, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+    color: black;
+    background-color: lightcoral;
+    border-radius: 1.5rem;
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 7px 9px red;
+}
+
+body {
+	background: lightblue;
+}
+
+/*** Body ***/
+
+h3 {
+	font-family: font-0, sans-serif;
+	text-align: center;
+	margin-top: 150px;
+	font-size: 50px;
+	background-color: lightcoral;
+	border-radius: 1.5rem;
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 7px 9px red;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+	margin-top: 150px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1rem;
+    height: 120px;
+    width: 17rem;
+    display: flex;
+    align-items: center;
+}
+
+#img {
+	justify-content: center;
+    border-radius: 35px;
+    padding: auto;
+    margin: auto;
+}
+
+#creation {
+	background: lightcoral;
+	justify-content: center;
+    border-radius: 35px;
+    box-shadow: 7px 9px red;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#lutte {
+	background: rgb(255, 145, 0);
+	justify-content: center;
+    border-radius: 35px;
+    box-shadow: 7px 9px rgb(114, 65, 0);
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#solution {
+	background: lawngreen;
+	justify-content: center;
+	border-radius: 35px;
+	box-shadow: 7px 9px green;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#projet {
+	background: lightcoral;
+	justify-content: center;
+    border-radius: 35px;
+    box-shadow: 7px 9px red;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#sign {
+	text-align: start;
+	margin-left: 35px;
+}
