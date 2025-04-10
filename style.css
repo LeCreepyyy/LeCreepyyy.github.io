@@ -1,0 +1,64 @@
+header {
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 10px;
+    background-color: darkcyan;
+    height: 100vh; /* plein écran vertical */
+}
+
+.sidebar-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: rgb(0, 129, 129);
+    border-radius: 10px;
+} .sidebar-button:hover {
+    background: fixed;
+    background-color: rgb(0, 124, 124);
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(16, 149, 142);
+}
+
+#title {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #33ff33; /* vert type terminal rétro */
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 4px; /* optionnel, mets 0 si tu veux du full carré */
+    margin: 20px;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    flex: 1; /* prend tout l’espace dispo */
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;     /* centre verticalement */
+    padding: 5%;
+    text-align: center;
+}
+.body-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
