@@ -26,6 +26,7 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
     font-weight: 600;
+    color: white;
 } .sidebar-button:hover {
     background: fixed;
     background-color: rgb(0, 124, 124);
@@ -43,7 +44,8 @@ body {
 #title {
     font-family: 'Courier New', Courier, monospace;
     background-color: #000;
-    color: #33ff33; /* vert type terminal rétro */
+    /* color: #33ff33;*/
+    color: white;
     font-size: 14px;
     padding: 10px 20px;
     border-radius: 4px; /* optionnel, mets 0 si tu veux du full carré */
