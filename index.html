@@ -26,49 +26,81 @@
 
         <div class="main-content" id="home">
             <h1>Présentation</h1>
-            <p>Je me nomme Poirot Vincent et voici ma page de présentation, ou je me résume en quatre point:</p>
+            <p>Je me nomme Poirot Vincent et voici ma page de présentation, où je me résume en quatre points:</p>
             <ul>
                 <li><h2>Quel développeur suis-je ?</h2>
-                    <p>
-                        Je commence ma formation en informatique fin 2022 a l'ecole 42 apres avoir reussi la piscine avec quasiment aucune connaissance prealable dans ce domaine.
-                        Mon parcours m'a permis de decouvrir rapidement les aspects principaux de la programmations.
-                        Au terme du tronc commun, mon domaine de predilection est le devellopment applications/programmes en C et C++.
-                        Je suis aussi interesse par la cybersecurite dans laquelle je commence a me former.
-                    </p>
+                    <p>Je commence ma formation en informatique fin 2022 à l'école 42 après avoir réussi la piscine avec quasiment aucune connaissance préalable dans ce domaine.<br>
+                    Mon parcours m'a permis de découvrir rapidement les aspects principaux de la programmation.<br>
+                    Au terme du tronc commun, mon domaine de prédilection est le dévellopment d'applications/programmes en C et C++.<br>
+                    Je suis aussi intéressé par la cybersécurité dans laquelle je commence à me former.</p>
                 </li>
 
-                <li><h2>Mes expériences professionneles</h2>
+                <li><h2>Mes expériences professionnelles</h2>
                     <p>
-                        En dehors de stage scolaire je n'ai aucune expériences professionneles dans le domaine de la programmation a partager pour le moment.
+                        En dehors de stage scolaire je n'ai aucune expérience professionnelle dans le domaine de la programmation à partager pour le moment.
                     </p>
                 </li>
                 
                 <li><h2>Ma scolarité</h2>
                     <p>
                         <ul>
-                            <li><span style="font-weight: bold;">\2018 $></span> Brevet des collèges et rentré au lycée charles pointet de Thann</li>
-                            <p>Je travallais mon Baccalauréas Professionnel en Maintenance des Equipements Industriels</p>
-                            <p>Durant ses année de lycée j'ai fait plusieurs stage dans le domaine de la maintenance chez Altodis à Rixheim et chez Corteva à Cernay</p>
-                            <li><span style="font-weight: bold;">\2022 $></span> Obtentions du Baccalauréas et admissions a l'école 42</li>
+                            <li><span style="font-weight: bold;">\2018 $></span> Brevet des collèges et rentré au lycée Charles Pointet de Thann</li>
+                            <p>Je travaillais mon Baccalauréat Professionnel en Maintenance des Equipements Industriels</p>
+                            <p>Durant ses années de lycée j'ai fait plusieurs stages dans le domaine de la maintenance chez Altodis à Rixheim et chez Corteva à Cernay</p>
+                            <li><span style="font-weight: bold;">\2022 $></span> Obtentions du Baccalauréat et admissions à l'école 42</li>
                             <p>J'opte pour une réorientation dans le domaine de la programmation</p>
-                            <li><span style="font-weight: bold;">\2025 $></span> Fin du tonc commun a l'école 42</li>
+                            <li><span style="font-weight: bold;">\2025 $></span> Fin du tronc commun à l'école 42</li>
                         </ul>
                     </p>
                 </li>
                 
                 <li><h2>Mes hobbies</h2>
-                    <p>
-                        Passionné de Jeux-Vidéo depuis toujours, je suis un gros joueur de jeux d'aventure.
-                        D'autre activité comme les jeux de société et jeux de cartes font partie de mes divertissements.
-                        Egalement je pratique régulièrement du sport pour me maintenir en forme, ainsi que de la randonnée.
-                    </p>
+                    <p>Depuis toujours, je suis passionné de jeux vidéo et je suis un grand amateur de jeux d'aventure.<br>
+                    D'autres activités, comme les jeux de société et les jeux de cartes, font partie de mes divertissements.
+                    De plus, je pratique régulièrement du sport et des activités en dehors pour rester en bonne santé.</p>
 
                 </li>
             </ul>
         </div>
 
         <div class="main-content" id="project1">
-            <p>Project 1</p>
+            <img src="assets/42logo.png" alt="42logo" height="100px" width="240px">
+            <h2>Mon cursus à 42</h2>
+            <p>Le concept de cette école est de réaliser des projets en totale autonomie sans professeur.<br>
+            Le travail en équipe et l'apprentissage par soi-même sont nécessaires pour avancer dans les projets.<br>
+            Je vais exposer en détail certains projets marquants ci-dessous.</p>
+
+            <ul>
+            <h2>Philosophers</h2>
+            <p>Connaissez-vous le problème du dîner des philosophes ?</p>
+            <p>Des philosophes sont réunis autour d'une table. Devant chacun, il y a une assiette et une fourchette à côté.</p>
+            <p>Un philosophe demande deux fourchettes pour le repas : celle à gauche et celle à droite.<br>
+            Si un philosophe ne mange pas dans un délai imparti, il décède.<br>
+            Entre chaque repas, les philosophes dorment et lorsqu'ils ne font ni l'un ni l'autre, ils pensent.</p>
+            <img src="assets/philo.png" alt="philo-picture" id="philo-img" height="200px" width="200px">
+            <p>Le but du programme est de reproduire cette situation dans un code en langage C.<br>
+            En argument pour lancer le programme, celui-ci demande 4 valeurs :
+            <ul>
+                ~> Nombre de philosophes.<br>
+                ~> Temps avant de décéder.<br>
+                ~> Temps pour manger.<br>
+                ~> Temps pour dormir.<br>
+            </ul></p>
+            <p>Le but du projet était d'utiliser les threads pour pouvoir lancer un processus différent par philosophe.<br>
+            Quand un processus(un philosophe), arrive dans la fonction pour "manger",<br>
+            il retire 2 à une variable qui représente les fourchettes et si celle-ci est inférieure à 2 alors il attend (il pense).<br>
+            Bien sûr, pendant ce temps-là, le délai avant qu'il décède avance.</p>
+            <p>Point important : lorsque les processus accèdent à une variable, ils placent un mutex.<br>
+                C'est un système pour empêcher que les autres processus accèdent à cette variable en même temps.</p>
+            <p>Pour vérifier si un philosophe doit décéder, il faut calculer le temps depuis son dernier repas<br>
+            et le comparer avec le délai fourni en argument.</p>
+            <p>Pour conclure, ce projet m'a permis d'approfondir mes connaissances en termes de programmations.<br>
+            Le multi-threading est une logique technique et très intéressante.</p>
+
+            <h2>Cub3d</h2>
+            <h2>irc</h2>
+            <h2>ft_transcendence ?</h2>
+            </ul>
         </div>
         
         <div class="main-content" id="project2">
