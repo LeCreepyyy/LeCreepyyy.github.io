@@ -31,7 +31,7 @@
 
         <div class="main-content" id="home">
             <h1>Présentation</h1>
-            <p>Je me nomme Poirot Vincent et voici ma page de présentation, où je me résume en quatre points:</p>
+            <p>Je me nomme Vincent Poirot et voici ma page de présentation, où je me résume en quatre points:</p>
             <ul>
                 <li><h2>Quel développeur suis-je ?</h2>
                     <p>Je commence ma formation en informatique fin 2022 à l'école 42 après avoir réussi la piscine avec quasiment aucune connaissance préalable dans ce domaine.<br>
@@ -49,21 +49,19 @@
                 <li><h2>Ma scolarité</h2>
                     <p>
                         <ul>
-                            <li><span style="font-weight: bold;">\2018 $></span> Brevet des collèges et rentré au lycée Charles Pointet de Thann</li>
-                            <p>Je travaillais mon Baccalauréat Professionnel en Maintenance des Equipements Industriels</p>
-                            <p>Durant ses années de lycée j'ai fait plusieurs stages dans le domaine de la maintenance chez Altodis à Rixheim et chez Corteva à Cernay</p>
-                            <li><span style="font-weight: bold;">\2022 $></span> Obtentions du Baccalauréat et admissions à l'école 42</li>
-                            <p>J'opte pour une réorientation dans le domaine de la programmation</p>
+                            <li><span style="font-weight: bold;">\2018 $></span> Brevet des collèges</li> <br>
+                            <li><span style="font-weight: bold;">\2022 $></span> Baccalauréat Professionnel en Maintenance des Equipements Industriels</p>
+                            <p>Durant ces années de lycée, j'ai fait plusieurs stages dans le domaine de la maintenance chez Altodis à Rixheim et chez Corteva à Cernay</p>
+                            <p>Après le Bac, j'opte pour une réorientation dans le domaine de la programmation : admissions à l'école 42 de Mulhouse</li>
                             <li><span style="font-weight: bold;">\2025 $></span> Fin du tronc commun à l'école 42</li>
                         </ul>
                     </p>
                 </li>
                 
                 <li><h2>Mes hobbies</h2>
-                    <p>Depuis toujours, je suis passionné de jeux vidéo et je suis un grand amateur de jeux d'aventure.<br>
-                    D'autres activités, comme les jeux de société et les jeux de cartes, font partie de mes divertissements.
-                    De plus, je pratique régulièrement du sport et des activités en dehors pour rester en bonne santé.</p>
-
+                    <p>Depuis toujours, je suis passionné de jeux vidéo et je suis un grand amateur de jeux d'aventures.<br>
+                    D'autres activités : les jeux de société et les jeux de cartes, font partie de mes divertissements. <br>
+                    De plus, je pratique régulièrement du sport pour rester en bonne santé et d'autres activités...</p>
                 </li>
             </ul>
         </div>
@@ -73,7 +71,7 @@
             <h2>Mon cursus à 42</h2>
             <p>Le concept de cette école est de réaliser des projets en totale autonomie sans professeur.<br>
                 Le travail en équipe et l'apprentissage par soi-même sont nécessaires pour avancer dans les projets.<br>
-                Je vais exposer en détail deux projets marquants ci-dessous.</p>
+                Je vais exposer en détail deux de mes projets marquants ci-dessous.</p>
 
             <ul>
             <h2>Philosophers</h2>
@@ -93,52 +91,53 @@
                     ~> Temps pour dormir.<br>
                 </ul></p>
                 <p>Le but du projet était d'utiliser les threads pour pouvoir lancer un processus par philosophe.<br>
-                    Quand un processus(un philosophe), arrive dans la fonction pour "manger",<br>
-                    il réserve la fourchette à sa gauche et à sa droite ce qui fait que le prochain processus ne peux prendre la fourchette à sa gauche.<br>
+                    Quand un processus (un philosophe), arrive dans la fonction pour "manger",<br>
+                    il prend la fourchette à sa gauche et à sa droite ce qui fait que le prochain processus ne peux prendre la fourchette à sa gauche.<br>
                     Le philosophe qui ne peux pas prendre une fourchette attend (il pense).<br>
-                    Pour bloquer une fourchette, on met en place un mutex qui vas empêcher le prochain precessus de la prendre.<br>
+                    Pour bloquer une fourchette, on met en place un mutex qui va empêcher le prochain processus de la prendre.<br>
                     Les fourchettes sont des variables de type 'pthread_mutex_t', qui grâce à une fonction, peuvent être bloquées et empêchent les autres processus d'y accéder.<br>
-                    Bien sûr, pendant ce temps-là, le délai avant qu'il décède avance.</p>
-                <p>Pour vérifier si un philosophe doit décéder, il faut calculer le temps depuis son dernier repas<br>
+                    Bien sûr, pendant ce temps-là, le délai avant qu'il décède progresse.</p>
+                <p>Pour vérifier si un philosophe va décéder, il faut calculer le temps depuis son dernier repas<br>
                     et le comparer avec le délai fourni en argument.</p>
-                <p>Pour conclure, ce projet m'a permis d'approfondir mes connaissances en termes de programmations.<br>
+                <p>Pour conclure, ce projet m'a permis d'approfondir mes connaissances en termes de programmation.<br>
                     Le multi-threading est une logique technique et très intéressante.</p>
 
             <br>
             <h2>ft_irc</h2>
                 🙋‍♂️<em>Un serveur IRC (Inter Relay Chat) est un service en ligne qui permet à des utilisateurs<br>
                     de discuter en temps réel via des "salons" ou "canaux" de discussion.</em>
-                <p>L'objectif était de créer un serveur IRC en duo. <br>
+                <p>L'objectif était de créer un serveur IRC en binôme. <br>
 					Il était demandé d'utiliser le C++ pour le réaliser. <br>
                     L'un des principes d'un serveur IRC, est de ne pas sauvegarder les conversations dans une base de données. <br>
                     Il n'y a aucune persistance dans les messages des utilisateurs. <br>
+					Le serveur doit être protegé par un mot de passe. <br>
                     </p>
-                <p>Pour commencer, on a déterminé un client de référence pour faire utiliser notre serveur, ainsi nous avons choisi <em style="font-weight: bold;">irssi</em>. <br>
-                    Les actions possible sur le serveur sont les mêmes qu'un serveur IRC classique. <br>
+                <p>Pour commencer, nous avons déterminé un client de référence pour utiliser notre serveur, ainsi nous avons choisi <em style="font-weight: bold;">irssi</em>. <br>
+                    Les actions possibles sur le serveur sont les mêmes qu'un serveur IRC classique. <br>
                     Le fonctionnement du serveur en plusieurs points :
                     <ul>
-                        <li><h3>Connexion d'un client:</h3>
+                        <li><h3>Connexion d'un client :</h3>
                             <ul>
                                 ~> Demande du displayname et username de l'utilisateur et le mot de passe du serveur. <br>
                                 ~> Vérification des informations et de la validité du mot de passe. <br>
                                 ~> Connexion de l'utilisateur au serveur. <br>
                                 ~> Les informations sont stockées dans un objet instancié à partir d'une classe. <br>
                             </ul></li>
-                        <li><h3>Utilisation:</h3>
+                        <li><h3>Utilisation :</h3>
                             <ul>
                                 ~> Créer / rejoindre des canaux de conversation. <br>
-                                ~> En tant qu'admin du canal:limiter le nombre de membres, le rendre sur invitation ou changer le topic. <br>
+                                ~> En tant qu'admin du canal : limiter le nombre de membres, le rendre "sur invitation" ou changer le topic. <br>
                                 ~> Possibilité de parler dans un canal privé entre chaque utilisateur.
                             </ul></li>
-                        <li><h3>Déconnexion / Crash:</h3>
+                        <li><h3>Déconnexion / Crash :</h3>
                             <ul>
                                 ~> Déconnexion de l'utilisateur, des canaux encore liés à lui. <br>
                                 ~> Suppression de l'objet lié à l'utilisateur.
                             </ul></li>
                     </ul>
                 </p>
-                <p>J'ai eu l'occasion de travailler en duo pendant ce projet. L'organisation était primordiale et nous avons réparti les tâches. <br>
-                    On s'est basé sur des serveurs déjà existants pour comprendre leur fonctionnement.</p>
+                <p>J'ai eu l'occasion de travailler en binôme pendant ce projet. L'organisation était primordiale et nous nous sommes répartis les tâches. <br>
+                    Nous nous sommes basés sur des serveurs existants pour comprendre leur fonctionnement.</p>
             </ul>
         </div>
         
